@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title New
+    link( rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap")
+    link(rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css")
+    link(rel="stylesheet" href="css/style.css")
+  body
+
+    .chat
+      .wrap
+        .chat-box
+          .chat-content
+            .chat-user.chat-user-one
+              .chat-user-one__avatar.chat-user__avatar
+                 img.img(src="images/chat-avatar.png", alt="Аватар")
+              span.chat-user-one__message.chat-user__message.text-base Это означает, что в Вашем доме, офисе, кабинете, мастерской хранятся ценности бóльшие, чем просто деньги или драгоценности, - культурные ценности. Произведения искусства, антиквариат, иные предметы коллекционирования – все это имущество, безусловно высокая стоимость которого. 
+            .chat-user.chat-user-two
+              .chat-user-two__avatar.chat-user__avatar
+                img.img(src="images/chat-avatar.png", alt="Аватар")
+              span.chat-user-two__message.chat-user__message.text-base Это означает,
+            .chat-user.chat-user-one
+              .chat-user-one__avatar.chat-user__avatar
+                img.img(src="images/chat-avatar.png", alt="Аватар")
+              span.chat-user-one__message.chat-user__message.text-base доме, офисе, кабинете, мастерской
+            .chat-date
+              span.chat-date__line
+              time(datetime="2011-10-21").chat-date__item.text-base 21 октября 2017
+              span.chat-date__line
+            .chat-user.chat-user-two
+              .chat-user-two__avatar.chat-user__avatar
+                img.img(src="images/chat-avatar.png", alt="Аватар")
+              span.chat-user-two__message.chat-user__message.text-base Это означает,
+            .chat-user.chat-user-one
+              .chat-user-one__avatar.chat-user__avatar
+                img.img(src="images/chat-avatar.png", alt="Аватар")
+              span.chat-user-one__message.chat-user__message.text-base доме, офисе, кабинете, мастерской
+          .chat-form
+            form.form(action="")
+              textarea.form__message(name="message" required)
+              .btn-box
+                button.btn.btn-form Отправить

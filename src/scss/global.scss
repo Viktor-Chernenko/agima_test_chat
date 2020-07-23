@@ -1,0 +1,105 @@
+*,
+::after,
+::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    -ms-overflow-style: scrollbar;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-fam-base;
+    font-size: $fs-base;
+    font-weight: norma;
+    color: $color-base;
+    background: $bg-base;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+a,
+button {
+    outline: none;
+}
+
+button,
+select {
+    cursor: pointer;
+}
+
+.wrap {
+    width: 100%;
+    max-width: $wrap-max-width;
+    margin: 0 auto;
+}
+
+// === btn ===
+
+.btn {
+    padding: 8px 33px;
+    font-family: $font-fam-3;
+    font-size: $fs-btn;
+    line-height: 24px;
+    color: $color-btn;
+    background: $bg-btn;
+    border-radius: 21px;
+    box-shadow: 0 4px 6px rgba(15, 84, 185, 0.3);
+}
+
+// === text ===
+
+.text-base {
+    font-size: $fs-base;
+    font-weight: normal;
+    line-height: 24px;
+    color: $color-base;
+
+    &_color {
+        color: $color-2;
+    }
+}
+
+// === form ===
+
+.form {
+    &__message {
+        width: 100%;
+        height: 130px;
+        padding: 10px;
+        margin-bottom: 15px;
+        font-family: $font-fam-2;
+        line-height: 19px;
+        color: $color-2;
+        resize: none;
+        background: $bg-base;
+        border: 1px solid $bg-3;
+        border-radius: 4px;
+        outline: none;
+        transition: .3s;
+
+        &:active,
+        &:focus {
+            box-shadow: 10px 0 10px -10px $color-2 inset, -10px 0 10px -10px $color-2 inset;
+        }
+    }
+}

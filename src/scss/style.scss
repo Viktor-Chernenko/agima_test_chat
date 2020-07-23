@@ -1,0 +1,111 @@
+@import "fonts", "vars", "global";
+
+// === Chat ===
+
+.chat {
+    &-box {
+        background: url(../images/bg-chat.jpg);
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: cover;
+    }
+
+    &-content {
+        max-height: 517px;
+        padding: 40px 0;
+        overflow-y: auto;
+        border: 1px solid #DBDBDB;
+    }
+
+    &-form {
+        padding: 20px 40px 30px 20px;
+    }
+
+    &-date {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+
+        &__item {
+            padding: 0 15px;
+        }
+
+        &__line {
+            flex-grow: 1;
+            height: 1px;
+            background: $bg-3;
+        }
+    }
+
+    &-user {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &__avatar {
+            flex-basis: 47px;
+            height: 47px;
+
+            .img {
+                max-width: inherit;
+            }
+        }
+
+        &__message {
+            position: relative;
+            display: inline-block;
+            max-width: 470px;
+            background: $bg-2;
+            border-radius: 5px;
+
+            &::before {
+                position: absolute;
+                top: 5px;
+                content: '';
+                border: 10px solid transparent;
+                border-top: 10px solid $bg-2;
+            }
+        }
+
+        &-one {
+            justify-content: flex-start;
+
+            &__avatar {
+                padding: 0 15px;
+            }
+
+            &__message {
+                padding: 11px 15px 11px 16px;
+                margin-right: 80px;
+
+                &::before {
+                    left: -10px;
+                }
+            }
+        }
+
+        &-two {
+            justify-content: flex-end;
+
+            &__avatar {
+                order: 1;
+                padding: 0 19px;
+            }
+
+            &__message {
+                padding: 12px 22px 10px 10px;
+                margin-left: 80px;
+
+                &::before {
+                    right: -10px;
+                }
+            }
+        }
+    }
+}
