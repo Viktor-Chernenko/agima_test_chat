@@ -43,6 +43,6 @@
     "gulp-svgmin": "^2.2.0",
     "gulp-uglify-es": "^2.0.0",
     "gulp-wrap": "^0.15.0",
-    "pug": "^2.0.4"
+    "pug": "^3.0.1"
   }
 }
